@@ -15,7 +15,7 @@ app.use(function (req, res, next) {
 });
 
 var bby = require('bestbuy')('xfwrtckumc5ug688k2dxyq5v');
-
+console.log('hello world');
 //creating a storage object
 //var storage = new storage();
 
@@ -23,7 +23,7 @@ app.get('/api', function (request, response) {
     bby.openBox('categoryId=' + data.categoryId[0].id).then(function (data) {
         //response.send(data);
         response.send(data.results);
-        //console.log(data.results[0]);
+        console.log(data.results[0]);
 
     });
 
