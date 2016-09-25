@@ -33,7 +33,11 @@ $(document).ready(function () {
                 $.each(results, function (i, item) {
                     console.log(item);
                     //call the following function (showQuestion(item)) to show the API results
+                    resultElement += '<li>';
                     resultElement += '<p>' + item.customerReviews.averageScore + '</p>';
+                    resultElement += '<p>' + item.descriptions.short + '</p>';
+                    resultElement += '</li>';
+
                     $('.displayResults').append(resultElement);
                 });
 
