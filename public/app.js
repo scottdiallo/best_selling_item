@@ -39,9 +39,10 @@ $(document).ready(function () {
                     resultElement += '<p>' + item.customerReviews.averageScore + '</p>';
                     resultElement += '<p>' + item.descriptions.short + '</p>';
 
-                    resultElement += '<p>' + item.images.standard + '</p>';
+                    resultElement += '<a href="' + item.links.web + '"><img src="' + item.images.standard + '"></a>';
+
                     //resultElement += '<p>' + item.links.web + '</p>';
-                    resultElement += '<img src="' + item.links.web + '">';
+                    //                    resultElement += '<img src="' + item.images.standard + '">';
 
                     //<img src='" + video.snippet.thumbnails.default.url + "'></a>
                     resultElement += '</li>';
