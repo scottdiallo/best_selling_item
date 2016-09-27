@@ -27,11 +27,26 @@
 
 .displayResults {
     background-color: bisque;
+    display: inline-block;
 }
+
+
+/*
+.results {
+    display: inline-block;
+}
+*/
 
 ul {
     list-style-type: none;
     display: block;
+    box-sizing: border-box;
+}
+
+li {
+    border: 3px solid #ccc;
+    margin-top: 5px;
+    border-radius: 5px;
 }
 
 .title {

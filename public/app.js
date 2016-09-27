@@ -30,7 +30,7 @@ $(document).ready(function () {
                 $.each(results, function (i, item) {
                     console.log(item);
                     //call the following function (showQuestion(item)) to show the API results
-                    resultElement += '<li>';
+                    resultElement += '<li class="results">';
                     resultElement += '<p class="title">' + item.names.title + '</p>';
                     resultElement += "<strong>" + '<p> Current Price: $' + "</strong>" + item.prices.current + '</p>';
                     resultElement += "<strong>" + '<p> Regular Price: $' + "</strong>" + item.prices.regular + '</p>';
