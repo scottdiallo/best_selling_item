@@ -1,0 +1,15 @@
+.heroText {
+    text-align: center;
+    font-size: 3em;
+    border: 2px solid yellow;
+    background-color: indianred;
+    border-radius: 10px;
+}
+
+.displayResults {
+    background-color: bisque;
+}
+
+ul {
+    list-style-type: none;
+}

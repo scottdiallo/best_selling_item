@@ -10,9 +10,6 @@ $(document).ready(function () {
     $('.findDeals').on('click', function (e) {
         displayDataOnDom();
         e.preventDefault();
-        //var output = document.getElementsByClassName('displayResults');
-        //output.innerHTML = jsonResults;
-
     });
 
 
@@ -34,8 +31,19 @@ $(document).ready(function () {
                     console.log(item);
                     //call the following function (showQuestion(item)) to show the API results
                     resultElement += '<li>';
+                    resultElement += '<p>' + item.names.title + '</p>';
+                    resultElement += '<p>' + item.prices.current + '</p>';
+                    resultElement += '<p>' + item.prices.regular + '</p>';
+                    resultElement += '<p>' + item.offers[0].condition + '</p>';
+
                     resultElement += '<p>' + item.customerReviews.averageScore + '</p>';
                     resultElement += '<p>' + item.descriptions.short + '</p>';
+
+                    resultElement += '<p>' + item.images.standard + '</p>';
+                    //resultElement += '<p>' + item.links.web + '</p>';
+                    resultElement += '<img src="' + item.links.web + '">';
+
+                    //<img src='" + video.snippet.thumbnails.default.url + "'></a>
                     resultElement += '</li>';
 
                     $('.displayResults').append(resultElement);
