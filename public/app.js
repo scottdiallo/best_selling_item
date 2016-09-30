@@ -39,6 +39,8 @@ $(document).ready(function () {
                     resultElement += "<strong>" + '<p> Descriptions: ' + "</strong>" + item.descriptions.short + '</p>';
 
                     resultElement += '<a href="' + item.links.web + '"><img src="' + item.images.standard + '"></a>';
+                    //                    resultElement += '<a href="' + product.addToCartUrl + '" class="add-to-cart">Add to Cart</a>';
+                    resultElement += "<button class='addToCart'>Add to Cart" + "</button>";
                     resultElement += '</li>';
 
                     $('.displayResults').append(resultElement);
