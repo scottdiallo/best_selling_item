@@ -31,16 +31,20 @@ $(document).ready(function () {
                     console.log(item);
                     //call the following function (showQuestion(item)) to show the API results
                     resultElement += '<li class="results">';
+                    resultElement += '<div class="contentWrap">';
+
                     resultElement += '<p class="title">' + item.names.title + '</p>';
                     resultElement += "<strong>" + '<p> Current Price: $' + "</strong>" + item.prices.current + '</p>';
                     resultElement += "<strong>" + '<p> Regular Price: $' + "</strong>" + item.prices.regular + '</p>';
                     resultElement += "<strong>" + '<p> Condition: ' + "</strong>" + item.offers[0].condition + '</p>';
                     resultElement += "<strong>" + '<p> Customer Reviews: ' + "</strong>" + item.customerReviews.averageScore + '</p>';
                     resultElement += "<strong>" + '<p> Descriptions: ' + "</strong>" + item.descriptions.short + '</p>';
+                    //                    <div class = "product-image" style="background-image: url(' + item.Images[0].url_fullxfull + ')"></div>
+                    resultElement += '</div>';
+                    resultElement += '<a href="' + item.links.web + '"> <div class = "product-image" style="background-image: url(' + item.images.standard + ')"></div> </a>';
 
-                    resultElement += '<a href="' + item.links.web + '"><img src="' + item.images.standard + '"></a>';
-                    //                    resultElement += '<a href="' + product.addToCartUrl + '" class="add-to-cart">Add to Cart</a>';
-                    resultElement += "<button class='addToCart'>Add to Cart" + "</button>";
+                    //                    //                    resultElement += '<a href="' + product.addToCartUrl + '" class="add-to-cart">Add to Cart</a>';
+                    //                    resultElement += "<button class='addToCart'>Add to Cart" + "</button>";
                     resultElement += '</li>';
 
                     $('.displayResults').append(resultElement);
