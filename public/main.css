@@ -1,5 +1,5 @@
 .search {
-    margin: 0 auto;
+    margin-left: 50%;
 }
 
 .findDeals {
@@ -19,28 +19,32 @@
 
 .heroText {
     text-align: center;
-    font-size: 3em;
     border: 2px solid yellow;
     background-color: indianred;
     border-radius: 10px;
+    color: #111;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
+    padding: 10px;
 }
 
-.displayResults {
-    background-color: bisque;
+.displayResults li {
+    width: 30%;
+    vertical-align: top;
+    padding: 1rem 1rem 1rem 1rem;
     display: inline-block;
 }
 
-
-/*
 .results {
     display: inline-block;
 }
-*/
 
 ul {
     list-style-type: none;
-    display: block;
-    box-sizing: border-box;
 }
 
 li {
@@ -51,4 +55,5 @@ li {
 
 .title {
     font-size: 22px;
+    text-align: center;
 }

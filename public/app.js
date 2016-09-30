@@ -35,7 +35,6 @@ $(document).ready(function () {
                     resultElement += "<strong>" + '<p> Current Price: $' + "</strong>" + item.prices.current + '</p>';
                     resultElement += "<strong>" + '<p> Regular Price: $' + "</strong>" + item.prices.regular + '</p>';
                     resultElement += "<strong>" + '<p> Condition: ' + "</strong>" + item.offers[0].condition + '</p>';
-
                     resultElement += "<strong>" + '<p> Customer Reviews: ' + "</strong>" + item.customerReviews.averageScore + '</p>';
                     resultElement += "<strong>" + '<p> Descriptions: ' + "</strong>" + item.descriptions.short + '</p>';
 
