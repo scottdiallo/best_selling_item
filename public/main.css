@@ -18,12 +18,21 @@
     -webkit-padding-end: 0px;
 }
 
-html {
-    background-color: #f6eb16;
+html {}
+
+.bg-image {
+    width: 100%;
+    /* height: 100%; */
+    position: absolute;
+    z-index: 1;
+    background-size: cover;
+    opacity: 0.1;
 }
 
 .search {
     margin-left: 50%;
+    position: absolute;
+    z-index: 2;
 }
 
 .findDeals {
@@ -37,18 +46,14 @@ html {
     font-weight: 500;
     color: aliceblue;
     outline: none;
+    margin-top: 200%;
 }
 
 .heroText {
     text-align: center;
-    border: 2px solid yellow;
-    background-color: #193366;
     border-radius: 10px;
-    color: #111;
-    font-family: 'Helvetica Neue', sans-serif;
     font-size: 75px;
     font-weight: bold;
-    letter-spacing: -1px;
     line-height: 1;
     text-align: center;
     padding: 10px;

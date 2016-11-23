@@ -10,6 +10,7 @@ $(document).ready(function () {
     $('.findDeals').on('click', function (e) {
         displayDataOnDom();
         e.preventDefault();
+        $('.findDeals').hide();
     });
 
 
@@ -39,12 +40,10 @@ $(document).ready(function () {
                     resultElement += "<strong>" + '<p> Condition: ' + "</strong>" + item.offers[0].condition + '</p>';
                     resultElement += "<strong>" + '<p> Customer Reviews: ' + "</strong>" + item.customerReviews.averageScore + '</p>';
                     resultElement += "<strong>" + '<p> Descriptions: ' + "</strong>" + item.descriptions.short + '</p>';
-                    //                    <div class = "product-image" style="background-image: url(' + item.Images[0].url_fullxfull + ')"></div>
                     resultElement += '</div>';
                     resultElement += '<a href="' + item.links.web + '"> <div class = "product-image" style="background-image: url(' + item.images.standard + ')"></div> </a>';
 
-                    //                    //                    resultElement += '<a href="' + product.addToCartUrl + '" class="add-to-cart">Add to Cart</a>';
-                    //                    resultElement += "<button class='addToCart'>Add to Cart" + "</button>";
+
                     resultElement += '</li>';
 
                     $('.displayResults').append(resultElement);
