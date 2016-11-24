@@ -49,6 +49,25 @@ html {}
     margin-top: 200%;
 }
 
+.refresh-btn {
+    font-size: 14px;
+    padding: 3px;
+    background: red;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    cursor: pointer;
+    font-weight: 500;
+    color: aliceblue;
+    outline: none;
+    margin-top: 7%;
+}
+
+.refresh {
+    margin-left: 90%;
+    position: absolute;
+    z-index: 2;
+}
+
 .heroText {
     text-align: center;
     border-radius: 10px;
@@ -171,5 +190,8 @@ ul {
     body {
         /*        background:#ffd700;
         */
+    }
+    .refresh {
+        display: none;
     }
 }

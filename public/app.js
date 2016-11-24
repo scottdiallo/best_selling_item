@@ -5,6 +5,12 @@ $(document).ready(function () {
         displayDataOnDom();
         e.preventDefault();
         $('.findDeals').hide();
+        $('.refresh').show();
+    });
+
+    //    users can click on refresh to load new contents
+    $('.refresh').on('click', function () {
+        displayDataOnDom();
     });
 
     function displayDataOnDom() {
@@ -54,4 +60,5 @@ $(document).ready(function () {
         });
 
     };
+
 });
