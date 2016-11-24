@@ -1,19 +1,11 @@
 $(document).ready(function () {
-    //    var responseData = function () {
-    //        this.item = [];
-    //        this.itemList = $('.displayResults');
-    //    }
-    //    responseData();
-    // function clickButton() {
-    console.log('it works!!!');
+    //    console.log('it works!!!');
 
     $('.findDeals').on('click', function (e) {
         displayDataOnDom();
         e.preventDefault();
         $('.findDeals').hide();
     });
-
-
 
     function displayDataOnDom() {
         var resultElement = '';
@@ -29,7 +21,7 @@ $(document).ready(function () {
                 console.log(results[0].customerReviews.averageScore);
 
                 $.each(results, function (i, item) {
-                    console.log(item);
+                    //                    console.log(item);
                     //call the following function (showQuestion(item)) to show the API results
                     resultElement += '<li class="results">';
                     resultElement += '<div class="contentWrap">';
