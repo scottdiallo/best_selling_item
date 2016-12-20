@@ -1,11 +1,7 @@
 # best_selling_item
 Thinkful (http://www.thinkful.com) Portofolio Excercise - BestBuy API App
-integrating with the *Etsy Open Platform API
-https://s13.postimg.org/vwkig6k93/etsy_screenshot.png
 
-![etsy-screenshot](https://cloud.githubusercontent.com/assets/16064574/20193179/baec574e-a741-11e6-8a59-feb9e9c2ce15.jpg)
-
-
+![screen shot 2016-12-20 at 11 49 55 am](https://cloud.githubusercontent.com/assets/16064574/21365573/b5c71c26-c6aa-11e6-9d3d-3be4bef8916f.png)
 
 ## Background
 I built this app because i like the simplicity of browsing without any ads.
