@@ -11,7 +11,7 @@ https://s13.postimg.org/vwkig6k93/etsy_screenshot.png
 I built this app because i like the simplicity of browsing without any ads.
 
 ## Use Case
-This app will be useful to anyone who like to save money and also shopping without ads poping up or any sort of disctraction.
+This app will be useful to anyone who like to save money and also shopping without ads popping up or any sort of distraction.
 
 ## working Prototype
 https://scottdiallo.github.io/best_selling_item/

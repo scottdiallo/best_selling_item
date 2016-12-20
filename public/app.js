@@ -9,8 +9,10 @@ $(document).ready(function () {
     });
 
     //    users can click on refresh to load new contents
-    $('.refresh').on('click', function () {
+    $('.refresh').on('click', function (e) {
+        e.preventDefault();
         displayDataOnDom();
+        // alert("hello world!");
     });
 
     function displayDataOnDom() {

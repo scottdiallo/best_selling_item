@@ -67,11 +67,14 @@ html {}
     position: absolute;
     z-index: 2;
 }
+.refresh-btn:hover{
+    font-size: 20px;
+}
 
 .heroText {
     text-align: center;
     border-radius: 10px;
-    font-size: 75px;
+    font-size: 32px;
     font-weight: bold;
     line-height: 1;
     text-align: center;
@@ -137,9 +140,9 @@ ul {
 /*optimizing to be mobile responsive*/
 
 @media (max-width:450px) {
-    body {
+    /*body {
         background: #2980b9;
-    }
+    }*/
     .heroText,
     .findDeals,
     .displayResults {
@@ -151,36 +154,36 @@ ul {
     #lol-emoji {
         display: none;
     }
-    body {
+    /*body {
         background: #8e44ad;
-    }
+    }*/
 }
 
 @media (min-width:541px) and (max-width:768px) {
     #lol-emoji {
         display: none;
     }
-    body {
+    /*body {
         background: #27ae60;
-    }
+    }*/
 }
 
 @media (min-width:769px) and (max-width:1024px) {
     #lol-emoji {
         display: none;
     }
-    body {
+    /*body {
         background: #16a085;
-    }
+    }*/
 }
 
 @media (min-width:1025px) and (max-width:1200px) {
     #lol-emoji {
         display: none;
     }
-    body {
+    /*body {
         background: #c0392b;
-    }
+    }*/
 }
 
 @media (min-width:1201px) {
